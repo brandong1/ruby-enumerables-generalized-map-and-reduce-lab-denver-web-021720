@@ -13,9 +13,14 @@ end
 #making default value of nil makes starting_value optional
 def reduce(source_array, starting_value = nil) 
   if starting_value != nil 
-    num1 = starting_value
+    sum = starting_value
     index = 0 
   else
-    num1 = source_array[0]
+    sum = source_array[0]
+    index = 1 
+  end
+  
+  while index < source_array.size do 
+    sum = yield(sum, source_array[index])
   
 end
