@@ -1,4 +1,4 @@
-def my_own_map
+def map
   array = []
   index = 0 
   
