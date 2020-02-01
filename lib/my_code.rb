@@ -10,6 +10,12 @@ def map(source_array)
   new 
 end
 
-def reduce(source_array)
+#making default value of nil makes starting_value optional
+def reduce(source_array, starting_value = nil) 
+  if starting_value != nil 
+    num1 = starting_value
+    index = 0 
+  else
+    num1 = source_array[0]
   
 end
